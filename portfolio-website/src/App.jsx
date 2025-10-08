@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Hero from './components/hero'
+import Hero from './components/Hero'
 import Services from './components/Services'
 import Contact from './components/Contact'
 import Loader from './components/Loader'
