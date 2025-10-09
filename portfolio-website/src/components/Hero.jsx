@@ -30,7 +30,7 @@ const Hero = () => {
         <h1 className="flex flex-col xl:space-y-8 md:space-y-4 space-y-2 xl:text-6xl md:text-4xl text-3xl md:font-normal font-bolder mt-8 md:mt-0">
           <span className="flex mx-auto md:mx-0">
             {letters.map((letter, index) => (
-              <span key={index} className="inline-block md:w-38 w-32 xl:-mr-20 -mr-24 relative" onMouseEnter={() => setHoveredLetter(index)} onMouseLeave={() => setHoveredLetter(null)} >
+              <span key={index} className="inline-block md:w-38 w-32 xl:-mr-20 -mr-24 relative"  >
                 {letter.char}
                 <img src={letter.img} alt={`Hover image ${index + 1}`} className={`xl:h-36 h-24 absolute bottom-full -translate-x-1/2 ${letter.rotate} ${hoveredLetter === index ? 'visible' : 'invisible'}`} />
               </span>
